@@ -13,6 +13,7 @@ WORKDIR /build/neovim
 RUN git checkout "$NEOVIM_VERSION"
 RUN make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=..
 RUN mkdir -p /out && cp -a build/lib build/bin runtime /out
+RUN VIMRUNTIME=/out/runtime /out/bin/nvim --headless +'helptags ALL' +qall
 
 FROM build AS rust_build
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \
