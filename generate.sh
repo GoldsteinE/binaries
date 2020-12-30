@@ -5,9 +5,9 @@ set -ex
 cd "$(basename "$(dirname "$0")")"
 
 CONTAINER_TAG='binaries-pack'
-NEOVIM_VERSION='8fb786e415d1c3538452885455b2268d13f640a6'
+NEOVIM_VERSION='69fc6c2de011e6da556fedd3a058fecf47883b8e'
 RIPGREP_VERSION='12.1.1'
-FD_VERSION='v8.1.1'
+FD_VERSION='v8.2.1'
 YADM_VERSION='3ddea208535be182af8cb53095d237bce55267f8'
 
 docker build -t "$CONTAINER_TAG" \
