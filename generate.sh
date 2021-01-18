@@ -5,7 +5,7 @@ set -ex
 cd "$(basename "$(dirname "$0")")"
 
 CONTAINER_TAG='binaries-pack'
-NEOVIM_VERSION='69fc6c2de011e6da556fedd3a058fecf47883b8e'
+NEOVIM_VERSION='51936126d3281231ec8f971ebefd82a95f8dc0e6'
 RIPGREP_VERSION='12.1.1'
 FD_VERSION='v8.2.1'
 YADM_VERSION='3ddea208535be182af8cb53095d237bce55267f8'
